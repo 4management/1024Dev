@@ -4,7 +4,7 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 .front-banner {
-   background: url('../assets/photo1.jpg') no-repeat center center;
+   background: url('../assets/photo2.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
 
@@ -21,7 +21,7 @@ header {
     font-family: "brandon-bold";
     font-size: 24px;
     color: black;
-    border-bottom: 3px solid #a32b30;
+    border-bottom: 3px solid #1291FF;
     text-transform: uppercase;
     /*padding: 0 0 5px;*/
     margin: 30px 0;
@@ -30,16 +30,51 @@ header {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
-.btn-lg {
-    //needs to be changed...
-    margin-left: 340px;
-}
+
 #barotext {
     font-family: "brandon-bold";
     text-align: justify;
     line-height: 2.5;
     font-size: 20px;
 }
+#about {
+    margin-bottom: 30px;
+}
+#our-services {
+    background-color: black;
+    color: white;
+    min-height: 600px;
+}
+#our-services p {
+    color: white;
+}
+#team {
+    background-color: white;
+    color: black;
+    min-height: 600px;
+}
+#portfolio {
+    background-color: black;
+    color: white;
+    min-height: 600px;
+}
+#portfolio p {
+    color: white;
+}
+#community {
+    background-color: white;
+    color: black;
+    min-height: 600px;
+}
+#contact {
+    background-color: black;
+    color: white;
+    min-height: 600px;
+}
+#contact p {
+    color: white;
+}
+
 .container-header {
     width: 800px;
     margin-left: auto;
@@ -174,6 +209,40 @@ header .navigation-container .social-media-container .social-media-btn.instagram
 }
 header .navigation-container .social-media-container .social-media-btn:hover {
     background-color: #a32b30;
+}
+
+.btn-trinity {
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  transition: all .4s ease-in-out;
+  //needs to be changed...
+    margin-left: 350px;
+}
+
+.btn-trinity-neonyellow {
+  border: 3px solid #1291FF;
+  background: rgba(23, 51, 68, 0.8);
+  color: #FFF;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.btn-trinity-neonyellow:hover,
+.btn-trinity-neonyellow:focus {
+  color: #FFF;
+  border: 3px solid #1291FF;
+  background: #0974BE;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19);
 }
 @keyframes dropdown-menu {
     from {
