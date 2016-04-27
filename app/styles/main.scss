@@ -9,91 +9,286 @@ $icon-font-path: '../fonts/';
   height: 100vh;
 
 }
+header {
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+#baroheader {
+    /*display: inline-block;*/
+    font-family: "brandon-bold";
+    font-size: 24px;
+    color: black;
+    border-bottom: 3px solid #a32b30;
+    text-transform: uppercase;
+    /*padding: 0 0 5px;*/
+    margin: 30px 0;
+    font-weight: 600;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.btn-lg {
+    //needs to be changed...
+    margin-left: 340px;
+}
+#barotext {
+    font-family: "brandon-bold";
+    text-align: justify;
+    line-height: 2.5;
+    font-size: 20px;
+}
+.container-header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 
-/*.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}*/
+}
+header.index {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header.homepage {
+    background: none;
+    box-shadow: none;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header.homepage.sticky {
+    background: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    color: black;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+header.homepage.sticky.slidedown {
+    animation: dropdown-menu 0.2s;
+    -webkit-animation: dropdown-menu 0.2s;
+}
+header.homepage.sticky.slideup {
+    top: -90px;
+    animation: slideup 0.2s;
+    -webkit-animation: slideup 0.2s;
+}
+header .logo-block {
+    background: url("index-logo-582e8a4c86f3d4a78d5b02fc2f19a29a.png") no-repeat;
+    width: 123px;
+    height: 52px;
+    float: left;
+    margin: 20px 0 0 40px;
+}
+header .logo-gear {
+    background: url("all-logo-27a70415453daba17c20add94b4125ee.png") no-repeat center;
+    background-color: #a32b30;
+    background-size: 75%;
+    width: 99px;
+    height: 100%;
+    float: left;
+    text-indent: -9999px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+header .logo-gear:hover {
+    background-color: #7e1f23;
+}
+header .mobile-btn {
+    display: none;
+}
+header .navigation-container {
+    float: right;
+    overflow: hidden;
+}
+header .navigation-container nav {
+    float: right;
+}
+header .navigation-container nav ul.nav {
+    overflow: hidden;
+}
+header .navigation-container nav ul.nav li.nav {
+    float: left;
+    line-height: 90px;
+    margin: 0 30px 0 0;
+    list-style-type: none;
+}
+header .navigation-container nav ul.nav li.nav:last-child {
+    margin: 0;
+}
+header .navigation-container nav ul.nav li.nav a {
+    font-family: "brandon-reg";
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+header .navigation-container nav ul.nav li.nav a:hover {
+    text-decoration: underline;
+    background: none;
 
-/* Space out content a bit */
-/*body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}*/
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-/*.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
-
-/* Custom page header */
-/*.header {
-  border-bottom: 1px solid #e5e5e5;*/
-
-  /* Make the masthead heading the same height as the navigation */
-/*  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}*/
-
-/* Custom page footer */
-/*.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+}
+header .navigation-container .social-media-container {
+    float: right;
+    margin: 0 20px;
+}
+header .navigation-container .social-media-container .social-media-btn {
+    background-image: url("all-social-media-sprite-a05c4c962e30001a7f93e5bf21f80e22.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 34px 5px 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+header .navigation-container .social-media-container .social-media-btn.facebook {
+    background-position: 7px center;
+}
+header .navigation-container .social-media-container .social-media-btn.twitter {
+    background-position: -22px center;
+}
+header .navigation-container .social-media-container .social-media-btn.linkedin {
+    background-position: -52px center;
+}
+header .navigation-container .social-media-container .social-media-btn.instagram {
+    background-position: -83px center;
+}
+header .navigation-container .social-media-container .social-media-btn:hover {
+    background-color: #a32b30;
+}
+@keyframes dropdown-menu {
+    from {
+    top: -90px;
+}
+to {
+    top: 0;
+}
+}@-webkit-keyframes dropdown-menu {
+    from {
+    top: -90px;
+}
+to {
+    top: 0;
+}
+}@keyframes slideup {
+    from {
+    top: 0px;
+}
+to {
+    top: -90px;
+}
+}@-webkit-keyframes slideup {
+    from {
+    top: 0px;
+}
+to {
+    top: -90px;
+}
+}@media only screen and (max-width: 850px) {
+    body header, html header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: visible;
+}
+body header.homepage, html header.homepage {
+    background: white;
+    position: fixed;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+body header .mobile-btn, html header .mobile-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    margin: 30px 20px 0 0;
+}
+body header .mobile-btn .mobile-icon, html header .mobile-btn .mobile-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 4px;
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+body header .mobile-btn .mobile-icon:last-child, html header .mobile-btn .mobile-icon:last-child {
+    margin: 0;
+}
+body header .navigation-container, html header .navigation-container {
+    display: none;
+    width: 100%;
+    background-color: black;
+    float: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body header .navigation-container nav, html header .navigation-container nav {
+    float: none;
+}
+body header .navigation-container nav ul.nav li.nav, html header .navigation-container nav ul.nav li.nav {
+    width: 100%;
+    float: none;
+    line-height: 80px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+body header .navigation-container nav ul.nav li.nav:hover, html header .navigation-container nav ul.nav li.nav:hover {
+    color: #999999;
+}
+body header .navigation-container nav ul.nav li.nav:last-child, html header .navigation-container nav ul.nav li.nav:last-child {
+    margin: 0;
+}
+body header .navigation-container nav ul.nav li.nav:last-child a, html header .navigation-container nav ul.nav li.nav:last-child a {
+    border-bottom: none;
+}
+body header .navigation-container nav ul.nav li.nav a, html header .navigation-container nav ul.nav li.nav a {
+    display: block;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+body header .navigation-container .social-media-container, html header .navigation-container .social-media-container {
+    display: none;
+}
+}@media only screen and (max-width: 450px) {
+    body header, html header {
+    height: 60px;
+}
+body header .logo-gear, html header .logo-gear {
+    background-size: 65%;
+    width: 80px;
+}
+body header .mobile-btn, html header .mobile-btn {
+    margin: 20px 20px 0 0;
+}
+body header .navigation-container, html header .navigation-container {
+    top: 60px;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}*/
-
-/* Main marketing message and sign up button */
-/*.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}*/
-
-/* Supporting marketing content */
-/*.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}*/
-
-/* Responsive: Portrait tablets and up */
-/*@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }*/
-
-  /* Remove the padding we set earlier */
-/*  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }*/
-
-  /* Space out the masthead */
-/*  .header {
-    margin-bottom: 30px;
-  }*/
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-/*  .jumbotron {
-    border-bottom: 0;
-  }
-}*/
+}
