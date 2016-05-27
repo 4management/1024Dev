@@ -9629,7 +9629,7 @@ function(t) {
             })
         }
     })
-}(jQuery), google.maps.event.addDomListener(window, "load", init),
+ }(jQuery), //google.maps.event.addDomListener(window, "load", init),
     function(t) {
         t.fn.summary = function(e) {
             return this.each(function() {
@@ -9648,7 +9648,8 @@ function(t) {
                 n.after(a)
             }
         }
-    }(jQuery), $(document).ready(function() {
+    }
+    (jQuery), $(document).ready(function() {
         function t() {
             if ($(window).width() > 850) {
                 var t = 0,
